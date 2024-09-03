@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script defer src="main.js"></script>
+    <title>Istiqomah</title>
+</head>
+<body>
+    
+    <main>
+        <aside>
+            <ul class="Links">
+                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </li>
+                <li onclick="Navigate(1)"><i class="fa-solid fa-user" ></i>
+                    <p>About Me</p>
+                </li>
+                <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+                    <p>Services</p>
+                </li>
+                <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+                    <p>Gallery</p>
+                </li>
+                <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
+                    <p>Contact Me</p>
+                </li>
+            </ul>
+        </aside>
+        <div class="swiper mySwiper">
+            <div class="SlideContainer swiper-wrapper">
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1>Hi! I'm <span class="stylized-name">Istiqomah</span>,</h1>
+                        <h2>A <span class="proffesions">Web Developer</span></h2>
+                        <p class="heroline">Tangguh, tekun, dan penuh semangat, saya istiqomah adalah mahasiswi Manajemen Informatika
+                            yang terampil dalam menghadapi perubahan. Saya memiliki kemampuan untuk berpikir kritis dan
+                            solutif dalam situasi yang menantang. Saya efektif dalam bekerja baik secara individu maupun sebagai
+                            bagian dari tim dan memiliki pemahaman yang kuat dalam ilmu manajemen dan teknologi.</p>
+                            <div class="buttonGroup">
+                                <button id="hireMeBtn">Hire Me</button>
+                                <button id="contactMeBtn">Contact Me</button>
+                            </div>                            
+                    </div>
+                    <div class="SideImg">
+                        <div class="top-right-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                        <img src="images/fotoisti.jpg" alt="">
+                        <div class="bottom-left-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                    </div>
+                    <p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-us">
+                    <h1 class="heading">About Me</h1>
+                    <h3 class="sub-heading">I'm Istiqomah, <span class="proffesions">A Web Developer</span></h3>
+                    <p class="aboutme-deatils">
+                        Saya adalah seorang wanita berusia 25 tahun dengan latar belakang akademis di bidang manajemen informatika. saya memiliki minat dan hobi yang kuat dalam dunia pemrograman. Dengan perpaduan antara pemahaman manajemen dan kemampuan teknis, saya senantiasa berusaha untuk terus mengasah keterampilan dan kemampuan saya dibidang tersebut. 
+                    </p>
+                    <div class="about-me-divison">
+                        <div class="about-me-table">
+                            <li><span>Experience:</span> 1+ years</li>
+                            <li><span>Country:</span> Indonesian</li>
+                            <li><span>Avability:</span> 24/7 </li>
+                            <li><span>Satisfied Clients:</span>-</li>
+                            <li><span>Age</span>: 25</li>
+                            <li><span>Phone</span>: 0858-9463-4233</li>
+                            <li><span>Language Used:</span>HTML</li>
+                            <div class="buttonGroup">
+                                <button id="hireMeBtn">Hire Me</button>
+                                <button id="contactMeBtn">Contact Me</button>
+                            </div>                            
+                        </div>
+
+                        <div class="skill-bar">
+                            <li>
+                                <p>HTML</p>
+                                <div class="bar">
+                                    <div class="active-bar" style="width:99%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>CSS</p>
+                                <div class="bar">
+                                    <div class="active-bar" style="width:80%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>JavaScript</p>
+                                <div class="bar">
+                                    <div class="active-bar" style="width:60%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Python</p>
+                                <div class="bar">
+                                    <div class="active-bar" style="width:30%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>PHP</p>
+                                <div class="bar">
+                                    <div class="active-bar" style="width:90%"></div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div></div>
+                <div class="swiper-slide services">
+
+                    <h1 class="heading">Services</h1>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h2>Web Design</h2>
+                        <p>Menggabungkan estetika dan fungsi untuk antarmuka web yang menarik dan mudah digunakan.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h2>Web Development</h2>
+                        <p>Membangun situs web yang kuat dan dinamis</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-gamepad"></i></div>
+                        <h2>Game Developer</h2>
+                        <p>Menciptakan dunia virtual yang imersif dengan menggabungkan kreativitas dan teknologi</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                        <h2>Database Admin</h2>
+                            <p>Menjaga data tetap aman, terorganisir, dan mudah diakses untuk mendukung operasi bisnis</p>
+                    </div>
+                </div>
+                <div class="swiper-slide gallery">
+                    <h1 class="heading">Gallery</h1>
+                    <div class="project"><img src="images/SertifikatVSGA-AI-gambar-0.jpg" alt=""></div>
+                    <div class="project"><img src="images/sertifikat-kariermu-istiqomah-gambar-0.jpg" alt=""></div>
+                    <div class="project"><img src="images/sertifikat-penyelesaian-gambar-0.jpg" alt=""></div>
+                    <div class="project"><img src="images/Sertifikat-VSGA-JNA-gambar-0.jpg" alt=""></div>
+                    <div class="project"><img src="images/SertifikatPOMNAS2023.jpg" alt=""></div>
+                    <div class="project"><img src="images/SertifikatUdemy.jpg" alt=""></div>
+                </div>
+                <div class="swiper-slide contactMe">
+                    <h1 class="heading">Contact Me</h1>
+                    <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+                        <h3>Mobile No</h3>
+                        <p>0858-9463-4233</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
+                        <h3>Location</h3>
+                        <p>South Borneo</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>isti4252@gmail.com</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-solid fa-globe"></i>
+                        <h3>Website</h3>
+                        <p>istiqomah.github.io</p>
+                    </div>
+                    <form action="https://formspree.io/f/xovabqbd" method="POST">
+                        <h2>Send Me A Message
+                            <div class="SocialLinks">
+                                <i class="fa-brands fa-instagram" onclick="window.open('https://www.instagram.com/istcc_', '_blank')"></i>
+                                <i class="fa-brands fa-github" onclick="window.open('https://github.com/istcx', '_blank')"></i>
+                                <i class="fa-brands fa-twitter" onclick="window.open('https://twitter.com/@qomah2606', '_blank')"></i>
+                                <i class="fa-brands fa-facebook" onclick="window.open('https://www.facebook.com/share/HAzNTcPJWo4UAT2g/?mibextid=qi2Omg', '_blank')"></i>
+                                <i class="fa-brands fa-linkedin" onclick="window.open('https://www.linkedin.com/in/isti-qomah-466a5b27b/', '_blank')"></i>
+                            </div>
+                        </h2>
+
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" rows="10" placeholder="Type your Message Here..." required></textarea>
+                        <button class="primary" type="submit">Send</button>
+
+                    </form>
+                    <footer>
+                        <li>Copyright © 2024 Istiqomah.</li>
+                    </footer>
+                </div>
+            </div>
+    </main>
+
+</body>
+</html>
