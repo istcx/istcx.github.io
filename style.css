@@ -1,3 +1,4 @@
+/* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bonbon&display=swap');
 
@@ -9,15 +10,17 @@
 
 body {
     height: 100vh;
+    font-family: Poppins;
 }
 
+/* Main Container */
 main {
     display: flex;
     height: 100%;
     width: 100%;
-    font-family: Poppins;
 }
 
+/* Sidebar */
 aside {
     width: 280px;
     display: flex;
@@ -53,21 +56,23 @@ aside li:hover {
 aside li::after {
     position: absolute;
     width: 100%;
-    left: 0px;
+    left: 0;
     height: 1px;
     background: linear-gradient(to left, transparent, #ffffff24, transparent);
     content: '';
-    bottom: 0px;
+    bottom: 0;
 }
 
 aside li i {
     font-size: 1.3rem;
 }
-.activeLink{
-    color:#80ed99
-}
-.mySwiper {
 
+.activeLink {
+    color: #80ed99;
+}
+
+/* Main Content */
+.mySwiper {
     flex: 1;
     height: 100%;
 }
@@ -79,20 +84,17 @@ aside li i {
 }
 
 .HomeContent {
-    margin: auto 0px;
+    margin: auto 0;
     flex: 1;
     height: auto;
-    
-    padding: 100px;
+    padding: 50px;
     user-select: none;
 }
 
 .SideImg {
-    width: 30%;
-
-
+    width: 40%;
     margin: auto 10px;
-    margin-right: 100px;
+    margin-right: 50px;
     position: relative;
 }
 
@@ -109,13 +111,13 @@ aside li i {
 .bottom-left-corner {
     left: -50px;
     bottom: -50px;
-    rotate: -90deg;
+    transform: rotate(-90deg);
 }
 
 .top-right-corner {
     right: -50px;
     top: -50px;
-    rotate: 90deg;
+    transform: rotate(90deg);
 }
 
 .hr1 {
@@ -131,23 +133,21 @@ aside li i {
     width: 10px;
     height: 120px;
     border-bottom-left-radius: 3px;
-
     background: #80ed99;
     border: none;
     border-bottom-right-radius: 3px;
 }
 
 .HomeContent h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .HomeContent h2 {
-    font-size: 2.3em;
+    font-size: 1.8em;
     margin-bottom: 10px;
     font-weight: 600;
-
 }
 
 .HomeContent h1 .stylized-name {
@@ -160,18 +160,18 @@ aside li i {
 }
 
 .HomeContent .heroline {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
-    padding-right:50px;
+    padding-right: 30px;
 }
 
 .buttonGroup {
     display: flex;
-    padding: 10px 0px;
+    padding: 10px 0;
     margin-top: 10px;
 }
 
-.buttonGroup button ,.primary{
+.buttonGroup button, .primary {
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -191,13 +191,10 @@ aside li i {
     text-align: center;
     font-weight: 400;
     z-index: 100;
-    left: 0%;
-    width: 100%;
+    left: 0;
     box-sizing: border-box;
     font-size: 1.2rem;
 }
-
-
 
 .mySwiper {
     width: 80vw;
@@ -208,28 +205,26 @@ aside li i {
 
 .swiper-slide {
     width: 100%;
-
     background-color: #343a40;
     height: 100%;
 }
 
+/* About Us Section */
 .about-us {
-    width:100%;
-    height:100%;
-
-    padding: 100px;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
     color: white;
 }
 
 .heading {
     padding: 20px 10px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #80ed99;
 }
 
 .about-us h3 {
     padding: 10px;
-
 }
 
 .aboutme-deatils {
@@ -242,9 +237,9 @@ aside li i {
 }
 
 .about-me-table {
-    width: 60%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .about-me-table li {
@@ -255,11 +250,11 @@ aside li i {
 .about-me-table li::after {
     position: absolute;
     width: 100%;
-    left: 0px;
+    left: 0;
     height: 1px;
     background: linear-gradient(to left, transparent, #ffffff77, transparent);
     content: '';
-    bottom: 0px;
+    bottom: 0;
 }
 
 .about-me-table span {
@@ -295,7 +290,6 @@ aside li i {
     height: 15px;
     background-color: #272c30;
     border-radius: 20px;
-
 }
 
 .active-bar {
@@ -305,12 +299,13 @@ aside li i {
     border-radius: 20px;
 }
 
+/* Services Section */
 .services {
     color: white;
     display: grid;
-    grid-template-columns: repeat(3, calc(34% - 10px));
-    grid-template-rows: 100px calc(50% - 50px) calc(50% - 50px);
-    padding: 100px ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 50px;
     box-sizing: border-box;
 }
 
@@ -328,36 +323,42 @@ aside li i {
     margin: 20px;
     backdrop-filter: blur(10px);
     flex-direction: column;
-
     transition-duration: 0.25s;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .services .service i {
-    font-size: 3rem;
-    color:#80ed99
+    font-size: 2.5rem;
+    color: #80ed99;
 }
 
 .services .service .service-icon {
-    padding: 0px 50px;
+    padding: 0px 30px;
     border-radius: 5px;
     margin: 20px auto;
 }
-.service h2{
-    color:#80ed99
-}
-.service:hover {
-    background-color: #80ed99;
-    color: #176d2d
-}
-.service:hover h2,.service:hover i{
-    color: #176d2d
+
+.service h2 {
+    color: #80ed99;
 }
 
+.service:hover {
+    background-color: #80ed99;
+    color: #176d2d;
+}
+
+.service:hover h2, .service:hover i {
+    color: #176d2d;
+}
+
+/* Gallery Section */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    padding:100px;
-    grid-template-rows: 100px calc(50% - 50px) calc(50% - 50px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+    box-sizing: border-box;
 }
 
 .gallery h1,
@@ -373,144 +374,204 @@ aside li i {
 }
 
 .gallery .project {
-    margin: 25px 20px;
-    margin-top: 0px;
+    margin: 0;
     background: #212529;
-    padding: 5px;
+    padding: 0;
     border-radius: 20px;
+    overflow: hidden;
+    position: relative;
 }
 
 .gallery .project img {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
-    border:none;
+    border: none;
 }
 
+/* Contact Me Section */
 .contactMe {
     display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 80px calc(25% - 20px) calc(25% - 20px) calc(25% - 20px) calc(25% - 20px);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
     position: relative;
-    padding:100px;
+    padding: 50px;
+    gap: 20px;
+    box-sizing: border-box;
 }
 
 .contactMe h1 {
-    grid-column: 1/span 3;
-    font-size:2.5rem;
-    padding:30px;
+    font-size: 2rem;
+    padding: 20px;
 }
 
 .contactMe form {
-    grid-area: 2/2/ span 5/span 2;
-}
-
-.contactinfo {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    color: white;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.contactinfo i {
-    padding: 10px;
-    font-size: 2.5rem;
-    color: #80ed99;
-    margin: 5px auto;
-}
-
-.contactinfo h3 {
-    color: #80ed99;
-}
-
-.contactMe form {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    gap: 20px;
     width: 100%;
     padding: 20px;
-    height: fit-content;
     color: white;
+    background-color: #212529;
+    border-radius: 10px;
 }
 
 .contactMe form h2 {
-    grid-column: 1/span 2;
-    padding: 20px;
-    display: flex;
+    margin-bottom: 20px;
 }
 
-.contactMe form input {
+.contactMe form input,
+.contactMe form textarea {
     padding: 15px;
     border-radius: 10px;
-    margin: 20px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border: none;
     color: white;
-    background-color: #212529;
-
+    background-color: #343a40;
 }
 
-.contactMe form input:focus {
+.contactMe form input:focus,
+.contactMe form textarea:focus {
     border: 1px solid #85f69f;
     outline: none;
-
 }
 
 .contactMe form textarea {
-    width: calc(100% - 40px);
+    resize: vertical;
+    height: 150px;
+}
 
-    grid-column: 1/span 2;
-    margin: 20px;
-    padding: 20px;
-    font-size: 1.1rem;
+.contactMe button {
+    padding: 15px;
     border-radius: 10px;
-    resize: none;
-    border:none;
+    background-color: #1d8637;
+    color: white;
+    font-size: 1.2rem;
     border: none;
-    color:white;
-    background-color: #212529;
+    cursor: pointer;
 }
 
-.contactMe form textarea:focus {
-    border: 1px solid #85f69f !important;
+.contactMe button:hover {
+    background-color: #176d2d;
 }
-.contactMe button{
-    grid-column: 1/span 2;
-    margin:20px auto ;
 
-}
-footer{
-    position:absolute;
-    bottom:0px;
-    right:0px;
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     text-align: center;
-    color:white;
-    width:100%;
+    color: white;
+    width: 100%;
     font-weight: 200;
     font-size: 0.8rem;
 }
-footer li{
-    padding:10px;
+
+footer li {
+    padding: 10px;
 }
-form h2 .SocialLinks{
-    padding:5px;
-    width:fit-content;
-    margin-left:auto;
-    margin-right:10px;
+
+form h2 .SocialLinks {
+    padding: 5px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 10px;
     background-color: #212529;
     border-radius: 30px;
 }
-form h2 .SocialLinks i{
-    padding:10px;
+
+form h2 .SocialLinks i {
+    padding: 10px;
     border-radius: 50%;
     transition-duration: 0.25s;
 }
-form h2 .SocialLinks i:hover{
+
+form h2 .SocialLinks i:hover {
     background-color: #176d2d;
 }
-.about-us{
-    overflow: auto;
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    aside {
+        width: 220px;
+    }
+
+    .HomeContent {
+        padding: 30px;
+    }
+
+    .SideImg {
+        width: 50%;
+        margin-right: 30px;
+        display: block; 
+    }
+
+    .about-me-table {
+        grid-template-columns: 1fr;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .contactMe {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    aside {
+        width: 100%;
+        position: fixed;
+        height: 100%;
+        z-index: 1000;
+        transition: transform 0.3s ease;
+        transform: translateX(-100%);
+    }
+
+    aside.open {
+        transform: translateX(0);
+    }
+
+    .HomeContent {
+        padding: 20px;
+    }
+
+    .SideImg {
+        display: none; 
+    }
+
+    .contactMe {
+        padding: 20px;
+    }
+
+    .contactMe form {
+        padding: 15px;
+    }
+
+    .contactMe form input,
+    .contactMe form textarea,
+    .contactMe form button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .contactMe form textarea {
+        height: 100px;
+    }
 }
