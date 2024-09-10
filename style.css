@@ -403,175 +403,59 @@ aside li i {
 
 .contactMe h1 {
     font-size: 2rem;
-    padding: 20px;
+    padding: 10px;
 }
 
-.contactMe form {
+.contactMe h2 {
+    color: #80ed99;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+}
+
+.contactMe .contact-social-icons {
+    justify-content: center;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    padding: 20px;
-    color: white;
-    background-color: #212529;
-    border-radius: 10px;
 }
 
-.contactMe form h2 {
-    margin-bottom: 20px;
-}
-
-.contactMe form input,
-.contactMe form textarea {
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 1rem;
-    border: none;
-    color: white;
-    background-color: #343a40;
-}
-
-.contactMe form input:focus,
-.contactMe form textarea:focus {
-    border: 1px solid #85f69f;
-    outline: none;
-}
-
-.contactMe form textarea {
-    resize: vertical;
-    height: 150px;
-}
-
-.contactMe button {
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #1d8637;
-    color: white;
-    font-size: 1.2rem;
-    border: none;
-    cursor: pointer;
-}
-
-.contactMe button:hover {
-    background-color: #176d2d;
-}
-
-/* Footer */
-footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    color: white;
-    width: 100%;
-    font-weight: 200;
-    font-size: 0.8rem;
-}
-
-footer li {
+.contactMe .social-icon {
+    color: #80ed99;
+    background-color: #80ed995c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
     padding: 10px;
-}
-
-form h2 .SocialLinks {
-    padding: 5px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: 10px;
-    background-color: #212529;
-    border-radius: 30px;
-}
-
-form h2 .SocialLinks i {
-    padding: 10px;
-    border-radius: 50%;
+    margin: 10px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
     transition-duration: 0.25s;
 }
 
-form h2 .SocialLinks i:hover {
-    background-color: #176d2d;
+.social-icon:hover {
+    background-color: #80ed99;
+    color: #176d2d;
 }
 
-/* Responsive Styles */
-@media (max-width: 1200px) {
-    .services {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* Footer Section */
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 30px 0px;
 }
 
-@media (max-width: 900px) {
-    aside {
-        width: 220px;
-    }
-
-    .HomeContent {
-        padding: 30px;
-    }
-
-    .SideImg {
-        width: 50%;
-        margin-right: 30px;
-        display: block; 
-    }
-
-    .about-me-table {
-        grid-template-columns: 1fr;
-    }
-
-    .services {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .contactMe {
-        padding: 20px;
-    }
+footer h3 {
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px;
 }
 
-@media (max-width: 600px) {
-    aside {
-        width: 100%;
-        position: fixed;
-        height: 100%;
-        z-index: 1000;
-        transition: transform 0.3s ease;
-        transform: translateX(-100%);
-    }
+footer a {
+    color: #80ed99;
+}
 
-    aside.open {
-        transform: translateX(0);
-    }
-
-    .HomeContent {
-        padding: 20px;
-    }
-
-    .SideImg {
-        display: none; 
-    }
-
-    .contactMe {
-        padding: 20px;
-    }
-
-    .contactMe form {
-        padding: 15px;
-    }
-
-    .contactMe form input,
-    .contactMe form textarea,
-    .contactMe form button {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-
-    .contactMe form textarea {
-        height: 100px;
-    }
+footer a:hover {
+    color: white;
 }
