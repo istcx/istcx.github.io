@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #1b90a7;  /* samain dengan section terakhir */
+    overflow-x: hidden;
+}
+
+
+main {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+aside {
+    width: 280px;
+    background: #29a751;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+}
+
+aside li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 24px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    position: relative;
+}
+
+aside li:hover,
+aside li.activeLink {
+    color: #80ed99;
+}
+
+aside li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #ffffff24, transparent);
+}
+
+aside li i {
+    font-size: 1.3rem;
+}
+
+.mySwiper {
+    flex: 1;
+    width: 100%;
+    min-height: 100vh;
+    background: #b4c1ce;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.swiper-slide {
+    width: 100%;
+    min-height: unset;
+    height: auto;
+    background: #1b90a7;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding-bottom: 40px;
+}
+
+.home-slide {
+    background: #343a40;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.HomeContent {
+    flex: 1;
+    padding: 80px 40px 40px 40px;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.HomeContent h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.HomeContent h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.HomeContent h1 .stylized-name {
+    color: #80ed99;
+}
+
+.proffesions {
+    color: #85f69f;
+}
+
+.HomeContent .heroline {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.SideImg {
+    width: 320px;
+    max-width: 90vw;
+    margin: 80px 40px 40px 0;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.SideImg img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.slide-help {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #80ed99;
+}
+
+.buttonGroup {
+    display: flex;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+.buttonGroup button ,.primary{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #1d8637;
+    color: white;
+    border-radius: 5px;
+}
+
+.about-us {
+    width: 100%;
+    color: white;
+    padding: 80px 40px;
+}
+
+.heading {
+    font-size: 2.2rem;
+    color: #80ed99;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.aboutme-deatils {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.about-me-divison {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.about-me-table {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.about-me-table li {
+    padding: 10px 0;
+    position: relative;
+}
+
+.about-me-table li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #ffffff77, transparent);
+}
+
+.skill-bar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-bar p {
+    color: #80ed99;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-bar .bar {
+    width: 100%;
+    height: 15px;
+    background: #272c30;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.active-bar {
+    background: #80ed99;
+    height: 100%;
+    width: auto;
+    border-radius: 20px;
+}
+
+.services {
+    color: white;
+    padding: 80px 0 0 0; /* padding atas saja */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 0 auto;
+    justify-content: center;
+    width: max-content; /* grid selebar konten */
+    align-items: start; /* pastikan grid item tidak stretch */
+}
+
+
+.services .service {
+    align-self: start;
+    height: auto;
+    min-height: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #212529;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.services .service:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+.services .service-icon {
+    font-size: 2.5rem;
+    color: #80ed99;
+    margin-bottom: 10px;
+}
+
+.services h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    padding: 80px 40px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.gallery .project {
+    background: #212529;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery .project img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.contactMe {
+  padding: 80px 40px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* kiri */
+.contactinfo {
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* kanan */
+.contact-form {
+  flex: 2; /* biar lebih lebar */
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.contact-form .socials {
+  display: flex;
+  gap: 15px;
+  font-size: 1.8rem;
+  margin: 10px 0 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.contact-form form .row {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-form form .row input {
+  flex: 1;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: #29a751;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #218838;
+}
+
+footer {
+    margin-top: auto; /* selalu dorong footer ke bawah */
+    background: #1b90a7; /* biar sama dengan section */
+    padding: 15px 0;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 1100px) {
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        min-height: unset;
+    }
+    aside {
+        width: 100%;
+        min-height: unset;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .Links {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 0;
+        justify-content: space-around;
+    }
+    aside li {
+        padding: 12px 8px;
+        font-size: 1rem;
+    }
+    .mySwiper {
+        width: 100vw;
+        min-height: unset;
+        height: auto;
+    }
+    .home-slide {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 40px 10px;
+        min-height: unset;
+        width: 100vw;
+    }
+    .HomeContent {
+        padding: 20px 10px;
+        text-align: center;
+        display: block;
+    }
+    .SideImg {
+        margin: 20px auto 0 auto;
+        width: 80vw;
+        max-width: 320px;
+        display: block;
+    }
+    .about-us {
+        padding: 30px 10px;
+    }
+    .about-me-divison {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-me-table {
+        grid-template-columns: 1fr;
+    }
+    .services {
+        grid-template-columns: 1fr;
+        padding: 30px 10px;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 30px 10px;
+    }
+    .contactMe {
+        padding: 30px 10px;
+        align-items: center;
+    }
+    .contactMe form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    aside li {
+        font-size: 0.9rem;
+        padding: 10px 4px;
+    }
+    .HomeContent h1 {
+        font-size: 1.5em;
+    }
+    .HomeContent h2 {
+        font-size: 1.1em;
+    }
+    .HomeContent .heroline {
+        font-size: 0.95rem;
+    }
+    .SideImg {
+        width: 100vw;
+        max-width: 220px;
+    }
+    .heading {
+        font-size: 1.2rem;
+    }
+    .aboutme-deatils {
+        font-size: 0.95rem;
+    }
+    .services .service {
+        padding: 18px 8px;
+    }
+    .gallery .project {
+        padding: 5px;
+    }
+    .contactMe form input,
+    .contactMe form textarea {
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+    .contactMe button {
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
+    footer {
+        font-size: 0.7rem;
+        margin-top: 20px;
+    }
+}
+
+/* --- CONTACT PAGE DESKTOP --- */
+.contactMe {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* kiri info, kanan form lebih lebar */
+    gap: 60px;
+    align-items: start;
+    padding: 60px 8vw 40px 8vw; /* lebih ke atas dan tengah */
+    min-height: 70vh;
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.contactinfo .info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contactinfo i {
+    font-size: 2.5rem;
+    color: #80ed99;
+    margin-bottom: 8px;
+}
+
+.contactinfo .label {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #80ed99;
+}
+
+.contactinfo .value {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.contactMe form {
+    width: 90%;
+    max-width: none; /* form lebih lebar */
+    margin-top: 20px;
+}
+
+.contactMe .social-icons {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 16px;
+}
+
+.contactMe h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .contactMe form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .contactinfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start; /* biar text tetap rata kiri */
+  }
+
+  .contactinfo .info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .contactinfo .info-item i {
+    font-size: 24px;
+    min-width: 30px;
+    text-align: center;
+  }
+
+  .contact-form .row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+}
+
+
+
+/* ===================== END RESPONSIVE ===================== */
